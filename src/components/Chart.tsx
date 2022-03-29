@@ -23,13 +23,13 @@ const Chart: React.FC<{
         top: 1,
       },
     },
-    colors: ['#800080'],
+    colors: ["#800080"],
     fill: {
-      type: 'gradient',
+      type: "gradient",
       gradient: {
         opacityFrom: 1,
         opacityTo: 0,
-      }
+      },
     },
     title: {
       text: heading,
