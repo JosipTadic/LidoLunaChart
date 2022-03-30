@@ -9,6 +9,7 @@ const App: React.FC = () => {
       "&tvl_min=50000&sort=tvlStaked&sort_order=desc&farms_tvl_staked_gte=10000000"
   );
 
+  // didn't return component for simplicity
   if (error) {
     console.log(error);
   }
@@ -33,9 +34,9 @@ const App: React.FC = () => {
 
   /* array with fake data(5 percent increase), only for prices, will use same dates as in "real" chart */
   var mockData = chartYAxis?.map((mockPrice) => mockPrice * 1.05);
-  mockData = mockData?.map(function (el) {
-    return Number(el.toFixed(2));
-  });
+  mockData = mockData?.map((el) => 
+    Number(el.toFixed(2))
+  );
 
   return (
     <>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 
 const Chart: React.FC<{
@@ -14,7 +13,7 @@ const Chart: React.FC<{
     },
   ];
 
-  const [options] = useState({
+  const options = {
     chart: {
       dropShadow: {
         enabled: true,
@@ -53,7 +52,7 @@ const Chart: React.FC<{
         },
       },
     },
-  });
+  };
 
   return (
     <>
